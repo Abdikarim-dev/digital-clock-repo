@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta tags for character set and responsive design -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- Title of the document -->
+    <title>Clock Website</title>
+    
+    <!-- Tailwind CSS for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- External CSS file -->
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <!-- Main container with a background image, centered content, and flexbox layout -->
+    <div
+      class="flex h-dvh justify-center items-center flex-col watch bg-no-repeat bg-cover bg-[center]  text-white "
+    >
+      <!-- Container for the digital clock display -->
+      <div class="flex justify-between items-center gap-10 sm:gap-10 md:gap-16 lg:gap-32 text-[50px] sm:text-[80px] md:text-[150px] ">
+        <!-- Hour display -->
+        <div class="flex justify-between items-center flex-col font-extrabold">
+          <span class="hour">23</span>
+        </div>
+        <!-- Minute display -->
+        <div class="flex justify-between items-center flex-col font-extrabold">
+          <span class="minute">00</span>
+        </div>
+        <!-- Second display -->
+        <div class="flex justify-between items-center flex-col font-extrabold">
+          <span class="second">00</span>
+        </div>
+      </div>
+      <!-- Container for the date display -->
+      <div class="text-[80px] sm:text-[150px] font-extrabold " style="font-family: 'Inspiration', cursive;">
+        <span class="monthName">Feb</span>
+        <span class="dayName">Sun</span>
+      </div>
+    </div>
+    
+    <!-- External JavaScript file -->
+    <script src="index.js"></script>
+  </body>
+</html>
