@@ -1,5 +1,5 @@
 /* Importing fonts from Google Fonts */
-@import url("https://fonts.googleapis.com/css2?family=Inspiration&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Raleway:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Inspiration&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto+Mono:wght@200;300;400;500;600;700&display=swap');
 
 /* Universal selector to reset margin, padding, and set box-sizing for all elements */
 * {
@@ -10,8 +10,14 @@
 
 /* .watch class for styling the main container */
 .watch{
-    font-family: 'Poppins', sans-serif; /* Setting the font family to Poppins for elements with the .watch class */
     /* Adding a background image with a dark linear gradient overlay */
-    background-image: linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.9),rgba(0,0,0,0.9)),url('https://img.freepik.com/free-photo/showcase-ancient-clocks-evoking-notions-time-historical-narratives_157027-2431.jpg?t=st=1707044775~exp=1707048375~hmac=fdbc2540ddedc80a434b50727f127fb1a393edbfdd397b8b414230a400990bd2&w=996');
+    
     /* The gradient makes the text more readable over the background image */
+}
+
+.watch .month-day-name {
+  font-family: 'Inspiration', cursive;/* Setting the font family to Poppins for elements with the .watch class */
+}
+.watch .time {
+  font-family: 'Roboto Mono', monospace;
 }
