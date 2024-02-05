@@ -8,13 +8,6 @@
   box-sizing: border-box; /* Ensures that padding and border are included in the element's total width and height */
 }
 
-/* .watch class for styling the main container */
-.watch{
-    /* Adding a background image with a dark linear gradient overlay */
-    
-    /* The gradient makes the text more readable over the background image */
-}
-
 .watch .month-day-name {
   font-family: 'Inspiration', cursive;/* Setting the font family to Poppins for elements with the .watch class */
 }
