@@ -4,6 +4,7 @@ const minuteElement = document.querySelector(".minute");
 const secondElement = document.querySelector(".second");
 const monthElement = document.querySelector(".month");
 const dayElement = document.querySelector(".day");
+const dayNoElement = document.querySelector(".dayNo");
 const yearElement = document.querySelector(".year");
 
 // Arrays containing names for days of the week and months for easy reference
@@ -40,10 +41,13 @@ const updateClockDisplay = () => {
   let second =
     now.getSeconds() < 10 ? `0${now.getSeconds()}` : `${now.getSeconds()}`;
 
+    let dayNo = now.getDate() < 10 ? `0${now.getDate()}` : `${now.getDate()}`;
+
   // Update the HTML content of the selected elements with the current time and date
   yearElement.innerHTML = year;
   monthElement.innerHTML = month;
   dayElement.innerHTML = day;
+  dayNoElement.innerHTML = dayNo;
   hourElement.innerHTML = hour;
   minuteElement.innerHTML = minute;
   secondElement.innerHTML = second;
@@ -55,4 +59,4 @@ setInterval(updateClockDisplay, 1000);
 
 const date2 = new Date();
 
-console.log(date2.getFullYear());
+console.log();
